@@ -1,6 +1,7 @@
 import profile from '@/assets/hinh.jpg'
 import { SelectedPage } from '@/shared/enums'
 import { motion } from 'framer-motion'
+import { TypeAnimation } from 'react-type-animation'
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void
@@ -8,7 +9,7 @@ type Props = {
 
 export default function About({ setSelectedPage }: Props) {
   return (
-    <motion.section id='about' className='pb-10 pt-16 sm:pt-20'>
+    <motion.section id='about' className='pb-10 pt-16 sm:pt-20 h-[100vh]'>
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.About)}
         className='relative mx-auto mb-6 max-w-[90vw] overflow-hidden rounded-xl bg-black/40 py-16 mt-10'
@@ -16,7 +17,14 @@ export default function About({ setSelectedPage }: Props) {
         <div className='mx-auto px-7'>
           <div>
             <h2 className='gray-primary-color text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl'>
-              Hello, I am <span className='italic'>Vuong Le</span>
+              Hello, I am{' '}
+              <span className='italic'>
+                <TypeAnimation
+                  sequence={['Vuong Le', 200, 'a full stack developer', 200]}
+                  wrapper='span'
+                  repeat={Infinity}
+                />
+              </span>
             </h2>
             <p className='mt-3 text-xl leading-relaxed text-gray-400 md:mt-6'>
               Started working with Spring and Java web development, then moving to one of the cutting-edge development

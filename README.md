@@ -63,23 +63,12 @@ Refer the following link to config:
 [Config prettier plugin for tailwind]https://github.com/tailwindlabs/prettier-plugin-tailwindcss
 ```
 
-6.This app's youtube and github
+6.Deploy to Netlify
 
 ```
-https://www.youtube.com/watch?v=I2NNxr3WPDo
-https://github.com/ed-roh/gym-typescript/tree/master
-```
-
-7.Deploy to cloudflare
-
-```
-Create a public repo in github
-Push the project to the github
-Create an account on cloudflare
-In cloudflare: https://dash.cloudflare.com/dfe622c90e6812eae3b71781e9a59713/workers-and-pages/create/pages
-Click "Connect to Git"
-Follow guides on the cloudflare
-url of this after: https://gym-react-ts-6qb.pages.dev/
+Login by github
+https://app.netlify.com/sites/vuongle-portfolio/overview
+url of this app: https://vuongle-portfolio.netlify.app/
 ```
 
 ## What I have learned

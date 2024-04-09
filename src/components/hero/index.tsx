@@ -13,11 +13,16 @@ export default function Hero({ setSelectedPage }: Props) {
     <motion.section id='home' className='relative h-[100vh] overflow-hidden pb-10 pt-16 sm:pt-20'>
       {/*text, 2 buttons , 2 icons*/}
       <motion.div className='relative z-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20'>
-        <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Home)} className='mx-auto max-w-xl text-center'>
-          <h1 className='gray-primary-color text-4xl font-bold sm:text-6xl'>I will resolve your frontend</h1>
+        <motion.div
+          onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
+          className='mx-auto max-w-2xl text-center'
+        >
+          <h1 className='gray-primary-color text-4xl font-bold sm:text-6xl'>
+            I will resolve your software development
+          </h1>
 
           <p className='mt-5 text-base text-white sm:text-xl'>
-            Do you need help in frontend development? Dont hesitate to contact me.
+            Do you need a full stack engineer? Don't hesitate to contact me.
           </p>
 
           <div>
